@@ -4,7 +4,7 @@ Useful wordpress plugins
 ### Revisr 
 Revisr allows you to manage your WordPress website with a Git repository.
 
-[https://wordpress.org/plugins/revisr/](https://wordpress.org/plugins/revisr/?target=_blank)
+[```https://wordpress.org/plugins/revisr/```](https://wordpress.org/plugins/revisr/?target=_blank)
 
 
 ### Yoast SEO
