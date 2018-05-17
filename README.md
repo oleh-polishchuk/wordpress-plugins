@@ -30,3 +30,8 @@ https://wordpress.org/plugins/header-and-footer-scripts/
 https://wordpress.org/plugins/wp-migrate-db/
 
     WP Migrate DB exports your database as a MySQL data dump, does a find and replace on URLs and file paths.
+
+### WP Child Theme Generator
+https://wordpress.org/plugins/wp-child-theme-generator/
+
+    WP Child Theme Generator is a plugin to create a child theme for any theme supported by WordPress CMS.
