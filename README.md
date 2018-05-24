@@ -35,3 +35,7 @@ https://wordpress.org/plugins/wp-migrate-db/
 https://wordpress.org/plugins/wp-child-theme-generator/
 
     WP Child Theme Generator is a plugin to create a child theme for any theme supported by WordPress CMS.
+### Menu Per Pages
+https://wordpress.org/plugins/menu-per-pages/
+
+    Wp Menu Per Pages Plugin let you provide to access a menu on your selected page.
