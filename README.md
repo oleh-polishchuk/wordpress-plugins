@@ -35,7 +35,14 @@ https://wordpress.org/plugins/wp-migrate-db/
 https://wordpress.org/plugins/wp-child-theme-generator/
 
     WP Child Theme Generator is a plugin to create a child theme for any theme supported by WordPress CMS.
+
 ### Menu Per Pages
 https://wordpress.org/plugins/menu-per-pages/
 
     Wp Menu Per Pages Plugin let you provide to access a menu on your selected page.
+
+
+### File Manager
+https://wordpress.org/plugins/wp-file-manager/
+
+    FILE MANAGER PROVIDES YOU FEATURES TO EDIT, DELETE, UPLOAD, DOWNLOAD, COPY AND PASTE FILES AND FOLDERS. YOU CAN EASILY COPY, MOVE FILES FOLDER OR ANY FILES FROM ONE LOCATION TO ANOTHER LOCATION.
