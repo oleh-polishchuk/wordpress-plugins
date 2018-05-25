@@ -41,8 +41,12 @@ https://wordpress.org/plugins/menu-per-pages/
 
     Wp Menu Per Pages Plugin let you provide to access a menu on your selected page.
 
-
 ### File Manager
 https://wordpress.org/plugins/wp-file-manager/
 
     FILE MANAGER PROVIDES YOU FEATURES TO EDIT, DELETE, UPLOAD, DOWNLOAD, COPY AND PASTE FILES AND FOLDERS. YOU CAN EASILY COPY, MOVE FILES FOLDER OR ANY FILES FROM ONE LOCATION TO ANOTHER LOCATION.
+
+### BackWPup
+https://wordpress.org/plugins/backwpup/
+
+    The backup plugin BackWPup can be used to save your complete installation including /wp-content/ and push them to an external Backup Service, like Dropbox, S3, FTP and many more, see list below.
