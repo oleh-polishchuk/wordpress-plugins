@@ -50,3 +50,8 @@ https://wordpress.org/plugins/wp-file-manager/
 https://wordpress.org/plugins/backwpup/
 
     The backup plugin BackWPup can be used to save your complete installation including /wp-content/ and push them to an external Backup Service, like Dropbox, S3, FTP and many more, see list below.
+
+### Polylang
+https://wordpress.org/plugins/polylang/
+
+    Polylang allows you to create a bilingual or multilingual WordPress site.
