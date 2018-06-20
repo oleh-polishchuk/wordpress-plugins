@@ -55,3 +55,33 @@ https://wordpress.org/plugins/backwpup/
 https://wordpress.org/plugins/polylang/
 
     Polylang allows you to create a bilingual or multilingual WordPress site.
+
+# Wordpress Fixes
+
+## Fix CORS issue
+
+Add this to .htaccess file
+
+    # BEGIN WordPress
+    
+    <IfModule mod_rewrite.c>
+    
+        RewriteEngine On
+        RewriteBase /
+        RewriteRule ^index\.php$ - [L]
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule . /index.php [L]
+
+        # Restrict dir which conrains mysql dumps
+        RewriteRule ^wp-content/releases/ - [L,R=404]
+        RewriteRule eb_builds - [L,R=404]
+        RewriteRule \.ebextensions - [L,R=404]
+
+        <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+            Header set Access-Control-Allow-Origin "*"
+        </FilesMatch>
+        
+    </IfModule>
+
+    # END WordPress
