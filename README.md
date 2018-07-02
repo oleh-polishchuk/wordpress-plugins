@@ -1,6 +1,11 @@
 # wordpress-plugins
 Useful wordpress plugins
 
+### Bulk Delete 
+https://wordpress.org/plugins/bulk-delete/
+
+    Plugin allows you to delete posts, pages, attachments, users and meta fields in bulk based on different conditions and filters.
+
 ### Revisr 
 https://wordpress.org/plugins/revisr/
 
