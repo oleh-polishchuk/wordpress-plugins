@@ -90,3 +90,22 @@ Add this to .htaccess file
     </IfModule>
 
     # END WordPress
+
+## Allow CloudFront to cache main/all pages
+
+Add this into the functions.php in child theme
+
+    /**
+     * Allow CloudFront to cache main page (or all pages)
+     */
+    function varnish_safe_http_headers() {
+        header( 'X-UA-Compatible: IE=edge,chrome=1' );
+        session_cache_limiter('');
+        header("Cache-Control: public, s-maxage=120");
+        header("Pragma: public, s-maxage=120");
+        if( !session_id() )
+        {
+            session_start();
+        }
+    }
+    add_action( 'send_headers', 'varnish_safe_http_headers' );
