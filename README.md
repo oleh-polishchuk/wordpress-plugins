@@ -109,3 +109,8 @@ Add this into the functions.php in child theme
         }
     }
     add_action( 'send_headers', 'varnish_safe_http_headers' );
+
+If this doesn't help, you can also set headers in `.htaccess` file:
+
+    Header set Cache-Control "max-age=2592000, public"
+ 
