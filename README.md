@@ -114,3 +114,13 @@ If this doesn't help, you can also set headers in `.htaccess` file:
 
     Header set Cache-Control "max-age=2592000, public"
  
+## Redirect to www with .htaccess
+
+Add this into .htaccess:
+
+    <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+    </IfModule>
+    
