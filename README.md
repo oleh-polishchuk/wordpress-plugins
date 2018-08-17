@@ -124,3 +124,43 @@ Add this into .htaccess:
     RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
     </IfModule>
     
+## Catch Contact Form 7 Submit event
+
+Add this into function.php
+
+    add_action( 'wp_footer', 'mycustom_wp_footer' );
+     /**
+     * Method that replace on_sent_ok with DOM Events for Contact Form 7
+     *
+     * @link https://contactform7.com/2017/06/07/on-sent-ok-is-deprecated/
+     */
+    function mycustom_wp_footer() {
+        ?>
+        <script type="text/javascript">
+
+            /**
+             * Method add gtm event when Newsletter Registration form will be submitted
+             *
+             * @page /newsletter
+             */
+             document.addEventListener( 'wpcf7mailsent', function( event ) {
+                var contactFormId = parseInt(event.detail.contactFormId);
+                 console.log('==> Contact Form 7 with id:', contactFormId, 'was submitted.');
+                 switch (contactFormId) {
+                    case 553:
+                        addContactUsEvent(event);
+                        break;
+                    case 931:
+                        addJobsFormEvent(event);
+                        break;
+                    case 1150:
+                        addNewsletterRegistration(event);
+                        break;
+                    default:
+                        console.log('==> No event found for form with id:', contactFormId);
+                }
+            }, false );
+        </script>
+        <?php
+    }
+
