@@ -164,3 +164,14 @@ Add this into function.php
         <?php
     }
 
+## Update wordpress admin password
+
+To show all users:
+
+    SELECT * FROM maya1_hosting_perel_io.wp_users;
+
+To update user password with ID = 1
+
+    UPDATE maya1_hosting_perel_io.wp_users
+    SET user_pass = '$P$BlGEKTUOu/VBJgpwrVmi7OtbtU9Dfv/'
+    WHERE ID = 1
