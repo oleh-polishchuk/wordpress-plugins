@@ -61,6 +61,11 @@ https://wordpress.org/plugins/polylang/
 
     Polylang allows you to create a bilingual or multilingual WordPress site.
 
+### Blank Slate
+https://wordpress.org/plugins/blank-slate/
+
+    This creates a page template giving you a blank page so only the content of the page is displayed.
+
 # Wordpress Fixes
 
 ## Fix CORS issue
