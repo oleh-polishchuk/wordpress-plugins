@@ -180,3 +180,10 @@ To update user password with ID = 1
     UPDATE maya1_hosting_perel_io.wp_users
     SET user_pass = '$P$BlGEKTUOu/VBJgpwrVmi7OtbtU9Dfv'
     WHERE ID = 1
+    
+## How to fix "WordPress Connection Information" on WP that is running in a docker container ?
+
+Open wp-config.php with your text editor of choice and add the following line to the end of the file:
+
+    define('FS_METHOD','direct');
+
