@@ -1,6 +1,16 @@
 # wordpress-plugins
 Useful wordpress plugins
 
+### Easy WP SMTP 
+https://wordpress.org/plugins/easy-wp-smtp/
+
+    Easy WP SMTP allows you to configure and send all outgoing emails via a SMTP server.
+
+### Contact Form 7
+https://wordpress.org/plugins/contact-form-7/advanced/
+
+    Contact Form 7 can manage multiple contact forms, plus you can customize the form.
+
 ### Bulk Delete 
 https://wordpress.org/plugins/bulk-delete/
 
