@@ -11,6 +11,11 @@ https://wordpress.org/plugins/contact-form-7/advanced/
 
     Contact Form 7 can manage multiple contact forms, plus you can customize the form.
 
+### Contact Form 7 Captcha
+https://wordpress.org/plugins/contact-form-7-simple-recaptcha/
+
+    This plugin implements “I’m not a robot” checkbox.
+
 ### Bulk Delete 
 https://wordpress.org/plugins/bulk-delete/
 
