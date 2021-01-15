@@ -1,6 +1,11 @@
 # wordpress-plugins
 Useful wordpress plugins
 
+### Safe SVG 
+https://wordpress.org/plugins/safe-svg/
+
+    Allow SVG Uploads in WordPress.
+
 ### Easy WP SMTP 
 https://wordpress.org/plugins/easy-wp-smtp/
 
