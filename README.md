@@ -207,3 +207,34 @@ Open wp-config.php with your text editor of choice and add the following line to
 
     define('FS_METHOD','direct');
 
+## Block any Russian email providers in Elementor Pro email form 
+
+Add this code into file `wp-content/themes/hello-elementor/functions.php`
+
+```
+
+/**
+ * Block any Russian email provider for Elementor Pro form for "email" field
+ */
+add_action('elementor_pro/forms/validation/email', function ($field, $record, $ajax_handler) {
+    if (!is_email($field['value'])) {
+        $ajax_handler->add_error($field['id'], 'Invalid Email address, it must be in the format user@example.com');
+        return;
+    }
+    $black_list_domains = [
+        'yandex.com',
+        'yandex.ru',
+        'rambler.ru',
+        'mail.ru',
+        'inbox.ru',
+        'inbox.lv',
+    ];
+    $email_domain = explode('@', $field['value'])[1];
+    if (in_array($email_domain, $black_list_domains)) {
+        $ajax_handler->add_error($field['id'], 'Invalid Email address, emails from the domain ' . $email_domain . ' are not allowed.');
+        return;
+    }
+}, 10, 3);
+
+
+```
