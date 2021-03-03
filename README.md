@@ -1,6 +1,12 @@
 # wordpress-plugins
 Useful wordpress plugins
 
+
+### Migrate Guru: Migrate & Clone WordPress Free 
+https://wordpress.org/plugins/migrate-guru/
+
+    Migrate Guru is the fastest way to migrate WordPress sites. It simplifies difficult WordPress migrations (e.g. multi-site networks, 200 GB sites, etc.).
+
 ### Safe SVG 
 https://wordpress.org/plugins/safe-svg/
 
