@@ -1,6 +1,10 @@
 # wordpress-plugins
 Useful wordpress plugins
 
+### UpdraftPlus WordPress Backup Plugin 
+https://wordpress.org/plugins/updraftplus/
+
+    UpdraftPlus simplifies backups and restoration
 
 ### Migrate Guru: Migrate & Clone WordPress Free 
 https://wordpress.org/plugins/migrate-guru/
